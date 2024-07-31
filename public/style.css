@@ -1,0 +1,16 @@
+body
+{
+
+    background-color: black;
+}
+
+.Font_anton
+{
+    font-family: "Anton variant0", Tofu;
+}
+
+.text-3d {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5), 
+                 4px 4px 0 rgba(0, 0, 0, 0.4),
+                 6px 6px 0 rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <%- include("partials/Header.ejs") %>
+    <div class="max-w-[1120px] mx-auto ">
+        <h1 class="md:text-[50px] sm:text-[40px] text-[25px] text-center text-white Font_anton text-3d bg-[#f0ffff88]">Welcome to the Read Blogs Section</h1>
+        <div class="max-w-[1020px] mx-auto  border-2 border-[white] text-white mt-[10px]" >
+            <% if (locals.blogEntries && blogEntries.length > 0) { %>
+                <% blogEntries.forEach((entry, index) => { %>
+                    <p class="md:text-[50px] sm:text-[40px] text-[25px] text-center text-white Font_anton text-3d bg-[#f0ffff88] mb-[10px]"><%= entry %></p>
+                <% }) %>
+            <% } %>
+        </div>
+    </div>
+</body>

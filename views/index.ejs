@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Banner section of the body begins here -->
+
+    <%- include("partials/Header.ejs") %>
+    <div class="Font_anton max-w-[1320px] xl:mx-auto lg:mx-[20px] mx-[10px] rounded-[5px]  my-[10px] bg-[url('images/1stbg.jpg')] bg-bottom bg-cover h-[80vh] flex items-center justify-center">
+        <div class="w-full h-full bg-[rgba(0,0,0,0.8)] flex flex-col items-center justify-center">
+            <div class="w-full text-center leading-[45px]  text-[white]">
+                <h1 class="text-[50px] font-black">BIG BOLD TEXT's</h1>
+                <div class="text-3d  mt-[3rem] sm:text-[25px] text-[17px] sm:leading-7 leading-6 mx-[10px]">
+                <p class="text-lime-300">Welcome to the World Of Writings</p>
+                <p> Motivate yourself to Write the best</p>
+                <p class="text-lime-300 font-black" >  Get your fingers on keyboard and Type Out The best of you</p>
+                </div>
+            </div>
+            <div class="mt-[5vh]  w-[100%] flex  ">
+                <input class="sm:w-[50%] w-[80%] text-center mx-auto rounded-[5px] px-5px sm:text-[25px] text-[17px]" type="search" placeholder=" --Search for blogs--">
+            </div>
+            <div class=" bg-lime-600 rounded px-[10px] text-[17px] text-[white] mt-[2vh] pointer hover:bg-[green] hover:border-2 overflow-hidden">
+                <input class="cursor-pointer text-center" type="button" value="Search" class="">
+            </div>
+        </div>
+    </div>
+     <!-- Banner section of the body ends here -->
+
+
+
+      <!-- Read Write portion of the body starts here -->
+       
+      <section class=" h-[30vh]   flex  justify-center sm:mt-[1vh] mt-[1vh] mb-[1vh]">
+        <div class="max-w-[1320px]   w-[100%] h-[30vh] bg-zinc-900 flex items-center justify-center">
+
+
+                <div class="grid sm:grid-cols-3 lg:mx-auto mx-[20px]  items-center gap-2 text-center text-3d ">
+
+                    <div class="w-[15rem]  bg-lime-600 rounded p-[1%] sm:text-[25px] text-[12px] text-[white] ml-[5pxpx] hover:bg-lime-900 ">
+                        <form action="/create" method="post">
+                            <input class=" text-3d" type="submit" value="CREATE ➕">
+                        </form>                        
+                    </div>
+                    
+                    <div class="w-[15rem]  bg-lime-600 rounded p-[1%] sm:text-[25px] text-[12px] text-[white] ml-[5pxpx] hover:bg-lime-900 ">
+                        <form action="/read" method="post">
+                            <input class=" text-3d" type="submit" value="READ 📖">
+                        </form>                        
+                    </div>
+
+                    <div class="w-[15rem]  bg-lime-600 rounded p-[1%] sm:text-[25px] text-[12px] text-[white] ml-[5pxpx] hover:bg-lime-900 ">
+                        <form action="/check" method="post">
+                            <input class=" text-3d" type="submit" value="CHECK 🔎">
+                        </form>                        
+                    </div>
+
+                </div>
+
+        </div>
+        </section>
+       <!-- read Write porttion of the body ends here -->
+
+
+     <!-- Create A blogpost Section Begins here -->
+
+     <section class="sm:h-[90vh] h-[70vh]   flex  justify-center ">
+        <div class="max-w-[1320px]   w-[100%] h-[90vh] bg-zinc-900 flex items-center justify-center">
+
+
+                <div class="grid sm:grid-cols-2 lg:mx-auto mx-[20px]  items-center gap-2 ">
+
+                    <div class="relative mx-[20px] sm:order-1 order-2">
+                        <img  class="rounded-[5px] w-[]" src="/images/writeBlog.jpg">
+                    </div>
+                    <div class="mx-[1px] sm:order-2 order-1">
+                        <h1 class="md:text-[40px] text-[25px] text-lime-300 text-3d Font_anton"> Write Your OWN Blogs Like Pro</h1>
+                        <p class=" text-white text-[15px]">
+                            To find inspiration for your blog, consider sharing personal experiences and insights from your daily life. 
+                            Explore industry trends and new technologies to provide fresh perspectives. 
+                            Create educational content with how-to guides and explainers.  </p>
+                    </div>
+                </div>
+
+        </div>
+        </section>
+     <!-- craete A blogpost section ends herer -->
+
+
+     <!-- Optin Section of the body begins here -->
+     <section class="sm:h-[100vh] h-[90vh]   flex  justify-center sm:mt-[10vh] mt-[23vh]">
+        <div class="max-w-[1320px]   w-[100%] h-[100vh] bg-zinc-900 flex items-center justify-center">
+
+
+                <div class="grid sm:grid-cols-2 lg:mx-auto mx-[20px]  items-center gap-2 ">
+
+                    <div class=" mx-[20px] sm:order-2 order-1 flex justify-center">
+                        <img  class="rounded-[5px] w-[85%]  " src="/images/Options.jpg">
+                    </div>
+                    <div class="mx-[1px] sm:order-1 order-2 ">
+                        <h1 class="md:text-[40px] text-[25px] text-lime-300 text-3d Font_anton text-center">Get Ideas for Your Blogs Like Pro 💡</h1>
+                            <!-- <div>
+                                <p class=" text-white text-[10px] text-center">
+
+                              
+                                </p>
+                            </div> -->
+
+                            <div class="max-w-lg mx-auto  p-[3px] shadow-lg h-64 overflow-auto bg-zinc-900 border-[3px] border-[black] rounded">
+                                <ul class="bg-zinc-900 px-[5px] text-white">
+                                    <li class="bg-zinc-800 mb-[5px]"><strong class="text-lime-300">Personal Experiences:</strong> Share your unique journey or daily life insights.</li>
+                                    <li class="bg-zinc-800 mb-[5px]"><strong class="text-lime-300">Industry Trends:</strong> Write about recent developments or new technologies.</li>
+                                    <li class="bg-zinc-800 mb-[5px]"><strong class="text-lime-300">Educational Content:</strong> Create how-to guides or in-depth explainers.</li>
+                                    <li class="bg-zinc-800 mb-[5px]"> <strong class="text-lime-300">Community Engagement:</strong> Seek reader feedback or collaborate with others.</li>
+                                    <li class="bg-zinc-800 mb-[5px]"><strong class="text-lime-300">Books/Articles:</strong> Review or summarize relevant content.</li>
+                                    <li class="bg-zinc-800 mb-[5px]"><strong class="text-lime-300">Creative Exercises:</strong> Brainstorm or use mind maps for ideas.</li>
+                                    <li class="bg-zinc-800 mb-[5px]"><strong class="text-lime-300">Personal Interests:</strong> Blog about hobbies or creative projects.</li>
+                                    <li class="bg-zinc-800 mb-[5px]"><strong class="text-lime-300">Feedback/Analytics:</strong> Analyze post performance and reader comments.</li>
+                                    <li class="bg-zinc-800 mb-[5px]"><strong class="text-lime-300">Writing Prompts:</strong> Use prompts to spark creativity.</li>
+                                    <li class="bg-zinc-800 mb-[5px]"><strong class="text-lime-300">Lifestyle/Philosophy:</strong> Reflect on personal growth or philosophical thoughts.</li>
+                                    <!-- Add more content to make scrolling necessary -->
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+        </section>
+      <!--Option Section of the body ends here -->
+
+
+
+</body>
+</html>
